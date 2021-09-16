@@ -9,8 +9,8 @@ phases:
       - echo Build started on `date`
       - echo $CODEBUILD_SRC_DIR_s3share
       - echo $(ls $CODEBUILD_SRC_DIR_s3share/)
-      - chmod +x $CODEBUILD_SRC_DIR_s3share/commands/testscript
-      - $CODEBUILD_SRC_DIR_s3share/commands/testscript
+      - chmod +x $CODEBUILD_SRC_DIR_s3share/testscript
+      - $CODEBUILD_SRC_DIR_s3share/testscript
   
   post_build:
     commands:
