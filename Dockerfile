@@ -7,4 +7,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Install application
 COPY app.py ./
 # Run application
-CMD python code_run.py
+# CMD python code_run.py
+CMD ["python", "code_run.py", "dataset"]
